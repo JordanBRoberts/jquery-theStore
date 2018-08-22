@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+
+
+<head>
+
+<link rel="stylesheet"
+href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7
+" crossorigin="anonymous">
+<link rel="stylesheet"  href="css/style.css"  type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+
+
+<title > The Store </title>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.shop.js"></script>
+
+
+</head>
+
+
+<body id="checkout-page" >
+
+<header>
+        <h1> <a  href="index.html">The Store</a><img src="images/nike logo.jpg" class= "nikelogo"  /> </h1>
+</header>
+
+<div class="topnav">
+
+  <a href="products.html">Products</a>
+  <a href="aboutus.html">About Us</a>
+  <a href="contactus.html">Contact </a>
+
+    <input type="text" placeholder="Search" style="border:solid" >
+</div>
+
+<br></br>
+
+<div id="site">
+	<header id="masthead">
+		<h3>Check Out </h3>
+	</header>
+	<div id="content">
+			<table id="checkout-cart" class="shopping-cart">
+			  <thead>
+				<tr>
+					<th scope="col">Item</th>
+					<th scope="col">Quantity</th>
+					<th scope="col">Price</th>
+				</tr>
+			  </thead>
+			  <tbody>
+
+			  </tbody>
+			</table>
+		 <div id="pricing">
+
+			<p id="shipping">
+				<strong>Shipping</strong>: <span id="sshipping"></span>
+			</p>
+
+			<p id="sub-total">
+				<strong>Total</strong>: <span id="stotal"></span>
+        <p>Add Coupon Below </p>
+        <P> "heresacoupon" </p>
+   <input id="myInput" type="text">
+   <button class="btn btn-success" onclick="myFunction()">Click Here</button>
+			</p>
+		 </div>
+
+<div style="text-align: center"; >
+  <FORM NAME="Calc" id = "asd" style="display:none";  >
+  <TABLE BORDER=4>
+  <TR>
+  <TD>
+  <INPUT TYPE="text"   NAME="Input" Size="16">
+  <br>
+  </TD>
+  </TR>
+  <TR>
+  <TD>
+  <INPUT TYPE="button" NAME="one"   VALUE="  1  " OnClick="Calc.Input.value += '1'">
+  <INPUT TYPE="button" NAME="two"   VALUE="  2  " OnCLick="Calc.Input.value += '2'">
+  <INPUT TYPE="button" NAME="three" VALUE="  3  " OnClick="Calc.Input.value += '3'">
+  <INPUT TYPE="button" NAME="plus"  VALUE="  +  " OnClick="Calc.Input.value += ' + '">
+  <br>
+  <INPUT TYPE="button" NAME="four"  VALUE="  4  " OnClick="Calc.Input.value += '4'">
+  <INPUT TYPE="button" NAME="five"  VALUE="  5  " OnCLick="Calc.Input.value += '5'">
+  <INPUT TYPE="button" NAME="six"   VALUE="  6  " OnClick="Calc.Input.value += '6'">
+  <INPUT TYPE="button" NAME="minus" VALUE="  -  " OnClick="Calc.Input.value += ' - '">
+  <br>
+  <INPUT TYPE="button" NAME="seven" VALUE="  7  " OnClick="Calc.Input.value += '7'">
+  <INPUT TYPE="button" NAME="eight" VALUE="  8  " OnCLick="Calc.Input.value += '8'">
+  <INPUT TYPE="button" NAME="nine"  VALUE="  9  " OnClick="Calc.Input.value += '9'">
+  <INPUT TYPE="button" NAME="times" VALUE="  x  " OnClick="Calc.Input.value += ' * '">
+  <br>
+  <INPUT TYPE="button" NAME="clear" VALUE="  c  " OnClick="Calc.Input.value = ''">
+  <INPUT TYPE="button" NAME="zero"  VALUE="  0  " OnClick="Calc.Input.value += '0'">
+  <INPUT TYPE="button" NAME="DoIt"  VALUE="  =  " OnClick="Calc.Input.value = eval(Calc.Input.value)">
+  <INPUT TYPE="button" NAME="div"   VALUE="  /  " OnClick="Calc.Input.value += ' / '">
+  <br>
+  </TD>
+  </TR>
+  </TABLE>
+  </FORM>
+</div>
+
+
+<br>
+</br>
+<button class="btn btn-success" onclick="asd(2)">Need a calculator?</button>
+<button class="btn btn-success" onclick="asd(1)">Hide</button>
+</form>
+
+
+
+		 <form action="order.html" method="post" id="checkout-order-form">
+		 	<h2>Your Details</h2>
+
+		 	<fieldset id="fieldset-billing">
+		 		<legend>Billing</legend>
+		 		<div>
+		 			<label for="name">Name</label>
+		 			<input type="text" name="name" id="name" data-type="string" data-message="This field cannot be empty" />
+		 		</div>
+		 		<div>
+		 			<label for="email">Email</label>
+		 			<input type="text" name="email" id="email" data-type="expression" data-message="Not a valid email address" />
+		 		</div>
+		 		<div>
+		 			<label for="city">City</label>
+		 			<input type="text" name="city" id="city" data-type="string" data-message="This field cannot be empty" />
+		 		</div>
+		 		<div>
+		 			<label for="address">Address</label>
+		 			<input type="text" name="address" id="address" data-type="string" data-message="This field cannot be empty" />
+		 		</div>
+		 		<div>
+		 			<label for="zip">ZIP Code</label>
+		 			<input type="text" name="zip" id="zip" data-type="string" data-message="This field cannot be empty" />
+		 		</div>
+		 		<div>
+		 			<label for="country">Country</label>
+		 			<select name="country" id="country" data-type="string" data-message="This field cannot be empty">
+		 				<option value="">Select</option>
+		 				<option value="US">South Africa</option>
+		 				<option value="IT">Europe</option>
+		 			</select>
+		 		</div>
+		 	</fieldset>
+
+
+
+<div id="shipping-same"> Select for Collection <input type="checkbox" value=""/></div>
+
+		 	<fieldset id="fieldset-shipping">
+
+
+		 		<div>
+		 			<label for="sname">Adresses</label>
+		 			<p> 	Cape Town, Main Road , Nike Industries 23 </p>
+		 		</div>
+		 	</fieldset>
+<input type="submit" value="Proceed" class="btn btn-success" />
+
+
+
+<br>
+</br>
+
+
+</body>
+
+
+    <footer >
+  <p>&copy 2018 - Jordan Roberts</p>
+
+    </footer>
+
+
+</html>

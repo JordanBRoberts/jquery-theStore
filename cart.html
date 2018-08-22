@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+
+
+<head>
+
+<link rel="stylesheet"
+href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7
+" crossorigin="anonymous">
+<link rel="stylesheet"  href="css/style.css"  type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+
+
+<title > The Store </title>
+
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.shop.js"></script>
+
+</head>
+
+
+<body>
+
+<header>
+        <h1> <a  href="homepage.html">The Store</a><img src="images/nike logo.jpg" class= "nikelogo"  /> </h1>
+</header>
+
+<div class="topnav">
+
+  <a href="products.html">Products</a>
+  <a href="aboutus.html">About Us</a>
+  <a href="contactus.html">Contact </a>
+  <input type="text" placeholder="Search" style="border:solid" >
+</div>
+
+
+<br><br>
+		<h3>Your Shopping Cart </h3>
+
+<div id="site">
+	<div id="content">
+		<form id="shopping-cart" action="cart.html" method="post">
+			<table class="shopping-cart">
+			  <thead>
+				<tr>
+					<th scope="col">Item</th>
+					<th scope="col">Quantity</th>
+					<th scope="col" colspan="2">Price</th>
+				</tr>
+			  </thead>
+			  <tbody>
+
+			  </tbody>
+			</table>
+
+			<ul id="shopping-cart-actions">
+
+				<li>
+					<input type="submit" name="delete" id="empty-cart" class="btn btn-success"  value="Empty Cart" />
+				</li>
+				<li>
+					<a href="products.html" class="btn btn-success" >Continue Shopping</a>
+				</li>
+				<li>
+					<a href="checkout.html" class="btn btn-success" >Go To Checkout</a>
+				</li>
+			</ul>
+		</form>
+	</div>
+
+
+
+</div>
+
+
+
+</body>
+
+
+
+    <footer >
+  <p>&copy 2018 - Jordan Roberts</p>
+
+    </footer>
+
+
+</html>
